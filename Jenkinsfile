@@ -14,7 +14,9 @@ pipeline{
 			}
 		}
 		stage('build docker image'){
-			sh 'docker build -t zhangfuli/node-pipeline-test:latest ./'
+			steps{
+				sh 'docker build -t zhangfuli/node-pipeline-test:latest ./'
+			}
 		}
 	}
 }
