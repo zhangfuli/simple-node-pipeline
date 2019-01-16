@@ -20,7 +20,7 @@ pipeline{
 		}
 		stage('push image'){
 			steps{
-				sh 'docker login -u zhangfuli -p zxc1171067930.'
+				sh 'docker login -u username -p password'
 				sh 'docker push zhangfuli/node-pipeline-test:latest'
 			}
 		}
