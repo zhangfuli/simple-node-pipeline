@@ -7,11 +7,14 @@ pipeline{
 				sh 'npm --version'
 			}
 		}
-		stage('run'){
+		stage('npm install'){
 			steps{
 				echo 'run'
-				sh 'node ./index.js'
+				sh 'npm install'
 			}
+		}
+		stage('build docker image'){
+			sh 'docker build -t zhangfuli/node-pipeline-test:latest ./'
 		}
 	}
 }
