@@ -1,0 +1,22 @@
+{
+  "name": "simple-node-pipeline",
+  "version": "1.0.0",
+  "description": "simple-node-pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangfuli/simple-node-pipeline.git"
+  },
+  "author": "zhangfuli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangfuli/simple-node-pipeline/issues"
+  },
+  "homepage": "https://github.com/zhangfuli/simple-node-pipeline#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
