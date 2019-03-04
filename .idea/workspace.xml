@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d22f530b-a091-4ff5-a767-2d3104331104" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/k8s.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +44,8 @@
       <file leaf-file-name="k8s.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/k8s.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+            <state relative-caret-position="290">
+              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -89,8 +90,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
+    <option name="width" value="960" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -191,12 +191,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551679835461</updated>
       <workItem from="1551679837870" duration="2447000" />
-      <workItem from="1551692282652" duration="2633000" />
+      <workItem from="1551692282652" duration="3619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5080000" />
+    <option name="totallyTimeSpent" value="6066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -287,8 +287,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/k8s.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+        <state relative-caret-position="290">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>

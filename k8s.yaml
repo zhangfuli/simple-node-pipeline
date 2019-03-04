@@ -1,3 +1,4 @@
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -15,6 +16,18 @@ spec:
           image: registry.dop.clsaa.com/zfl/simple-node-test:<BUILD_TAG>
           ports:
             - containerPort: 3000
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-node-test
+  namespace: default
+spec:
+  containers:
+    - name: simple-node-test
+      image: registry.dop.clsaa.com/zfl/simple-node-test:<BUILD_TAG>
+      ports:
+        - containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
