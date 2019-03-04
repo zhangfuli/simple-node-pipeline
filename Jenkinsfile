@@ -66,10 +66,9 @@ pipeline{
 		stage('发布系统') {
 			steps {
 				echo "start deploy"
-				dir(SERVICE_DIR){
-				    sh "ls -l"
-				    sh "kubectl apply -f k8s.yaml"
-				}
+		        sh "ls -l"
+				sh "kubectl apply -f k8s.yaml"
+		
 			}
 		}
 	}
