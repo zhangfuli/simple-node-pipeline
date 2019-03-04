@@ -36,7 +36,6 @@ pipeline{
                 echo "image tag : ${build_tag}"
                 sh "ls -l"
                 sh "docker build -t ${DOCKER_REGISTRY}:${build_tag} ./"
-
 			}
 		}
 
