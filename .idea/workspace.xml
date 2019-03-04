@@ -44,8 +44,8 @@
       <file leaf-file-name="k8s.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/k8s.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="655">
+              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -61,7 +61,11 @@
     <findStrings>
       <find>dop-</find>
       <find>namespace</find>
+      <find>dop</find>
     </findStrings>
+    <replaceStrings>
+      <replace>default</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,9 +93,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="960" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -191,15 +196,15 @@
       <option name="presentableId" value="Default" />
       <updated>1551679835461</updated>
       <workItem from="1551679837870" duration="2447000" />
-      <workItem from="1551692282652" duration="3619000" />
+      <workItem from="1551692282652" duration="4205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6066000" />
+    <option name="totallyTimeSpent" value="6652000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -216,7 +221,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.28774616" />
       <window_info anchor="bottom" id="Pants Console" order="7" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" />
@@ -287,8 +292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/k8s.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="655">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
         </state>
       </provider>
     </entry>
