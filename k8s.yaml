@@ -1,0 +1,58 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: simple-node-test
+  namespace: dop
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: simple-node-test
+    spec:
+      containers:
+        - name: gateway-server
+          image: registry.dop.clsaa.com/zfl/simple-node-test:<BUILD_TAG>
+          volumeMounts:
+            - name: host-time
+              mountPath: /etc/localtime
+            - name: host-timezone
+              mountPath: /etc/timezone
+          ports:
+            - containerPort: 8080
+      volumes:
+        - name: host-time
+          hostPath:
+            path: /etc/localtime
+        - name: host-timezone
+          hostPath:
+            path: /etc/timezone
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-node-test
+  namespace: dop
+  labels:
+    app: simple-node-test
+spec:
+  ports:
+    - port: 14001
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: simple-node-test
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: simple-node-test
+  namespace: dop
+spec:
+  rules:
+    - host: open.dop.clsaa.com
+      http:
+        paths:
+          - backend:
+              serviceName: gateway-server
+              servicePort: 14001
