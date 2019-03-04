@@ -13,20 +13,8 @@ spec:
       containers:
         - name: simple-node-test
           image: registry.dop.clsaa.com/zfl/simple-node-test:<BUILD_TAG>
-          volumeMounts:
-            - name: host-time
-              mountPath: /etc/localtime
-            - name: host-timezone
-              mountPath: /etc/timezone
           ports:
             - containerPort: 3000
-      volumes:
-        - name: host-time
-          hostPath:
-            path: /etc/localtime
-        - name: host-timezone
-          hostPath:
-            path: /etc/timezone
 ---
 apiVersion: v1
 kind: Service
