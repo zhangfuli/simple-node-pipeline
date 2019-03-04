@@ -34,10 +34,9 @@ pipeline{
 			steps {
                 echo "start build image"
                 echo "image tag : ${build_tag}"
-                dir(SERVICE_DIR){
-                    sh "ls -l"
-                    sh "docker build -t ${DOCKER_REGISTRY}:${build_tag} ."
-                }
+                sh "ls -l"
+                sh "docker build -t ${DOCKER_REGISTRY}:${build_tag} ./"
+
 			}
 		}
 
@@ -46,8 +45,8 @@ pipeline{
                 echo "start push image"
                 dir(SERVICE_DIR){
                   sh "ls -l"
-                  withCredentials([usernamePassword(credentialsId: 'zfl_docker_registry', passwordVariable: 'zfl_docker_registryPassword', usernameVariable: 'zfl_docker_registryUsername')]) {
-                      sh "docker login -u ${zfl_docker_registryUsername} -p ${zfl_docker_registryPassword} ${DOCKER_REGISTRY_HOST}"
+                  withCredentials([usernamePassword(credentialsId: 'zfl_docker_registry', passwordVariable: 'password', usernameVariable: 'username')]) {
+                      sh "docker login -u ${username} -p ${password} ${DOCKER_REGISTRY_HOST}"
                       sh "docker push ${DOCKER_REGISTRY}:${build_tag}"
                   }
                 }
@@ -57,11 +56,10 @@ pipeline{
         stage('更新YAML镜像版本') {
             steps{
                 echo "start change yaml image tag"
-                dir(SERVICE_DIR){
-                    sh "ls -l"
-                    sh "sed -i 's/<BUILD_TAG>/${build_tag}/' k8s.yaml"
-                    sh "cat k8s.yaml"
-                }
+                sh "ls -l"
+                sh "sed -i 's/<BUILD_TAG>/${build_tag}/' k8s.yaml"
+                sh "cat k8s.yaml"
+
             }
         }
 
