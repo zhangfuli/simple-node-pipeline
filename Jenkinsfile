@@ -68,7 +68,7 @@ pipeline{
 				echo "start deploy"
 		        sh "ls -l"
 				sh "kubectl apply -f k8s.yaml"
-		
+
 			}
 		}
 	}
