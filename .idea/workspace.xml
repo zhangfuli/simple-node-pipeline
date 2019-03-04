@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af9a1efd-6b43-4f41-9a42-ba313f9c8722" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dop-web/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/dop-web/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dop-web/k8s.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dop-web/k8s.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +18,7 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dop-web/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="-20">
               <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
@@ -26,8 +27,17 @@
       <file leaf-file-name="Jenkinsfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dop-web/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
+            <state relative-caret-position="377">
+              <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="k8s.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dop-web/k8s.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -40,6 +50,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/dop-web/k8s.yaml" />
         <option value="$PROJECT_DIR$/dop-web/Jenkinsfile" />
       </list>
     </option>
@@ -163,12 +174,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551700931968</updated>
-      <workItem from="1551700936887" duration="153000" />
+      <workItem from="1551700936887" duration="717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153000" />
+    <option name="totallyTimeSpent" value="717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -185,12 +196,12 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="right" id="Mongo Explorer" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3293348" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3293348" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16471216" />
       <window_info anchor="bottom" id="Pants Console" />
-      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Docker" visible="true" weight="0.3293348" />
       <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -212,15 +223,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dop-web/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="-20">
           <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dop-web/k8s.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dop-web/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
+        <state relative-caret-position="377">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>
