@@ -50,7 +50,7 @@ metadata:
   namespace: default
 spec:
   rules:
-    - host: open.dop.clsaa.com
+    - host: www.dop.clsaa.com
       http:
         paths:
           - path: /
