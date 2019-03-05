@@ -6,6 +6,8 @@ WORKDIR /home/Service
 
 COPY . /home/Service
 
+RUN ls
+
 RUN npm install
 
 EXPOSE 3000
