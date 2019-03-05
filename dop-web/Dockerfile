@@ -10,6 +10,6 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 
 RUN ls
 EXPOSE 80
-RUN cp -r dist/* /var/www/html \
+RUN cp -r build/* /var/www/html \
     && rm -rf /user/src/app
 CMD ["nginx","-g","daemon off;"]
