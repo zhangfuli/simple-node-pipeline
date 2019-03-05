@@ -37,7 +37,7 @@ metadata:
     app: dop-web
 spec:
   ports:
-    - port: 14000
+    - port: 14001
       protocol: TCP
       targetPort: 80
   selector:
@@ -56,4 +56,4 @@ spec:
           - path: /
             backend:
               serviceName: dop-web
-              servicePort: 14000
+              servicePort: 14001
